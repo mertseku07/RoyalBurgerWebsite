@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Royal Burger</title>
+<link rel="icon" href="logo.png">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href='https://css.gg/arrow-up.css' rel='stylesheet'> <!--css package for an icon-->
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+
+
+<link rel="stylesheet" href="stylescontact.css">
+</head>
+<body>
+    <div class="m-4">
+        <nav id="navbar_top" class="navbar navbar-expand-lg navbar-light bg-light"><!--SETTING AN ID=NAVBAR_TOP MAKES OUR NAVBAR STICKY AT TOP WHILE SCROLLING BECAUSE OF JS-->
+            <div class="container-fluid">
+                <a href="index.html" class="navbar-brand">
+                    <img src="logo.png" height="50px" alt="Royal Burger"><!--Adding our logo to the beginning of the navbar-->
+                </a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav">
+                        <a href="index.html" class="nav-item nav-link">Homepage</a>
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Products</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <a class="dropdown-item" href="products.html">Hamburgers</a>
+                          <a class="dropdown-item" href="snacks.html">Snacks</a>
+                          <a class="dropdown-item" href="hotdogs.html">Hotdogs</a>
+                        </div>
+                      </li>
+                        <a href="menu.html" class="nav-item nav-link">Menu</a>
+                    </div>
+                    <div class="navbar-nav ms-auto">
+                      <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="gg-arrow-up"></i></button><!--GO BACK TO TOP BUTTON-->
+
+    
+    <section id="contact">                                                          <!--CONTACT FORM-->
+        <div class="sectionheader">	<h1>CONTACT</h1></div>
+        <article>
+        <p>To inform your opinions and experiences about us, please click the button below and fill out the form. </p>
+            
+                <label for="checkcontact" class="contactbutton"><div class="mail"></div></label><input id="checkcontact" type="checkbox"> 
+        
+                <form action="" method="post" class="contactform">
+                    <p class="input_wrapper"><input type="text" name="contact_nom" value="" required id ="contact_nom"><label for="contact_nom">NAME</label></p>   <!--MAKING NAME,EMAIL and MESSAGE BOXES REQUIRED-->
+                    <p class="input_wrapper"><input type="text" name="contact_email" value="" required id ="contact_email"><label for="contact_email">EMAIL</label></p>
+                    <p class="textarea_wrapper"><textarea name="contact_message" required id="contact_message"></textarea></p>
+                    <p class="submit_wrapper"><input type="submit" value="SEND"></p>			
+                </form>
+        </article>
+    </section>
+      
+
+
+
+
+
+<!--FOOTER Starting-->
+<div class="footer-dark">
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-3 item">
+                    <h3><i class="material-icons">schedule</i> Working hours</h3>
+                    <ul>
+                        <li><a href="#"><b>Monday - Friday:</b> 10.30 - 24.00</a></li>
+                        <li><a href="#"><b>Saturday:</b> 10.30 - 24.00</a></li>
+                        <li><a href="#"><b>Sunday:</b> 11.00 - 22.00</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-3 item">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><a href="#"><b>Address:</b> Çıplaklı, Akdeniz Blv. No:290/A, 07190 Döşemealtı/Antalya</li>
+                        <li><a href="#"><b>Phone:</b> (0242) 245 00 00</a></li>
+                        <li><a href="#"><b>E-Mail:</b> info@antalya.edu.tr</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 item text">
+                    <h3>Royal Burger</h3>
+                    <p>A burger restaurant that beyond words</p>
+                </div>
+                <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-whatsapp"></i></a></div>
+            </div>
+            <p class="copyright">Royal Burger © 2021</p>
+        </div>
+    </footer>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+
+
+<script src="javascript.js"></script>
+</body>
+</html>
